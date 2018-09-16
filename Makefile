@@ -7,5 +7,14 @@ $(HELLO): clean $(HELLO).c
 clean:
 	rm $(HELLO)
 
+debug: $(HELLO).c $(HELLO)
+	@echo @ $@
+	@echo % $%
+	@echo "<" $<
+	@echo ? $?
+	@echo ^ $^
+	@echo + $+
+	@echo * $*
+
 .PHONY: clean
 
