@@ -1,11 +1,13 @@
 HELLO = hello
 GCC = gcc
 
-$(HELLO): clean $(HELLO).c	
-	$(GCC) $(HELLO).c -o $(HELLO)
+vpath %.c src
+
+$(HELLO): $(HELLO).c	
+	$(GCC) $< -o $@
 
 clean:
-	rm $(HELLO)
+	rm -f $(HELLO)
 
 debug: $(HELLO).c $(HELLO)
 	@echo @ $@
