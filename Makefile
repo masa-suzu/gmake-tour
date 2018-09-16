@@ -1,10 +1,11 @@
-HELLO=hello
+HELLO = hello
+GCC = gcc
 
-${HELLO}: clean hello.c	
-	gcc hello.c -o ${HELLO}
+$(HELLO): clean $(HELLO).c	
+	$(GCC) $(HELLO).c -o $(HELLO)
 
 clean:
-	rm ${HELLO}
+	rm $(HELLO)
 
 .PHONY: clean
 
