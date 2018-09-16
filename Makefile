@@ -1,2 +1,2 @@
 hello: hello.c	
-	gcc hello.c -o bin/hello
+	gcc hello.c -o hello
