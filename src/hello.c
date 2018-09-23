@@ -1,6 +1,11 @@
 #include <stdio.h>
+#include <hello.h>
+
+void Hello(){
+    printf("Hello GNU Make.\n");
+}
 
 int main(){
-    printf("Hello GNU Make.\n");
+    Hello();
     return 0;
 }
