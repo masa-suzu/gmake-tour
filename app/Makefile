@@ -7,7 +7,7 @@ QUIET = @
 vpath %.c src
 vpath %.h include
 
-build: $(HELLO).c ## build app by gcc
+hello: $(HELLO).c ## build app by gcc
 	$(GCC) $< $(FLAGS) -o $@
 
 clean: ## clean binary
