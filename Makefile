@@ -1,7 +1,9 @@
+SHELL = /bin/bash
+
 HELLO = hello
 GCC = gcc
 FLAGS = -I include
-QUIET= @
+QUIET = @
 vpath %.c src
 vpath %.h include
 
