@@ -3,7 +3,9 @@ QUIET = @
 
 apps := app
 
-.PHONY: $(apps)
+.PHONY: all $(apps)
+
+all: $(apps)
 
 $(apps):
 	$(MAKE) -C $@
